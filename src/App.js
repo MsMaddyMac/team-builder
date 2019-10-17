@@ -5,7 +5,11 @@ import MemberList from "./components/MemberList";
 import './App.css';
 
 function App() {
-  const [members, setMembers] = useState("");
+  const [members, setMembers] = useState([{
+    name: "",
+    email: "",
+    role: "" 
+  }]);
 
   const addNewMembers = member => {
       setMembers([...members, member]);
